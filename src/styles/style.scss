@@ -1,0 +1,145 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 47px;
+    padding: 0 80px;
+    background: linear-gradient(45deg, #ff9900 0%,#ff5500 100%);
+    img {
+      width: 142px;
+      height: 25px;
+    }
+    ul {
+      display: flex;
+      li {
+        padding: 20px;
+        list-style: none;
+        a {
+          text-decoration: none;
+          color: white;
+
+          &:hover {
+            text-decoration:underline ;
+          }
+        }
+      }
+    }
+  }
+  .main {
+    height: 776px;
+    // height: 100vh;
+    // width: 100%;
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .esquerdo{
+      width: 60%;
+      h1{
+
+      }
+      span{
+        img {
+
+        }
+
+      }
+      h3{
+
+      }
+      h4 {
+
+      }
+      a {
+
+      }
+    }
+    .direito {
+      img {
+        
+      }
+    }
+  }
+  .page-link {
+    height: 866px;
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .divisor {
+      width: 960px;
+      height: 54px;
+      margin-bottom: 122px;
+    }
+    .form-link {
+      display: flex;
+      flex-direction: row;
+      form {
+        width: 430px;
+        padding: 30px;
+        border: 1px solid #fff;
+        box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
+        label {
+          display: flex;
+          flex-direction: column;
+          font-weight: 700;
+          input {
+            margin: 10px 0 15px;
+            font-size: 15px;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+            &::placeholder {
+              opacity: .9;
+            }
+          }
+        }
+        p {
+          color: #999;
+          margin: 0 0 15px;
+          font-size: 70%;
+
+        }
+        button {
+          width: 100%;
+          font-family: inherit;
+          padding: 10px 16px;
+          border-radius: 6px;
+          font-size: 18px;
+          line-height: 1.3;
+          background: linear-gradient(45deg,#f60,#fc0);
+          border: none;
+          color: white;
+          span {
+          
+          }
+        }
+      }
+      .link-free {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 80px;
+      }
+    }
+  }
+  .grid {
+    height: 971px;
+  }
+}
