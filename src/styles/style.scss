@@ -11,6 +11,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // position: fixed;
+    z-index: 1;
     width: 100%;
     height: 47px;
     padding: 0 80px;
@@ -37,43 +39,66 @@ body {
   }
   .main {
     height: 776px;
-    // height: 100vh;
-    // width: 100%;
-    width: 960px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     .esquerdo{
-      width: 60%;
-      h1{
-
-      }
-      span{
-        img {
-
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      .title {
+        position: relative;
+        height: 158px;
+    
+        h1{
+          text-align: left;
+          font-size: 54px;
+          line-height: 58px;
+          text-transform: uppercase;
+          span {
+            font-weight: 400;
+          }
         }
-
+        img {
+          width: 73px;
+          height: 73px;
+          position: absolute;
+          left: 352px;
+          top: 50px;
+        }
       }
       h3{
-
+        font-weight: 400;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        text-align: left;
+        font-size: 19px;
+        line-height: 26px;
+        color: #000; 
       }
-      h4 {
-
+      p {
+        margin: 20px 0 30px;
+        font-size: 16px;
+        line-height: 22px;
       }
       a {
 
       }
     }
     .direito {
+      display: flex;
+      align-items: center;
       img {
-        
+        width: 371px;
+        height: 693px;
       }
     }
   }
   .page-link {
     height: 866px;
-    width: 960px;
+    // width: 960px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -81,7 +106,7 @@ body {
     justify-content: center;
 
     .divisor {
-      width: 960px;
+      // width: 960px;
       height: 54px;
       margin-bottom: 122px;
     }
@@ -141,5 +166,45 @@ body {
   }
   .grid {
     height: 971px;
+    margin: 0 auto;
+    h2 {
+      font-size: 36px;
+      line-height: 50px;
+      text-align: center;
+      font-weight: 400;
+      margin-bottom: 97px;
+    }
+
+    .blocos {
+      display: flex;
+      justify-content: space-between;
+      .bloco {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        img {
+          width: 274px;
+          height: 506px
+        }
+        h4 {
+          font-weight: 400;
+          text-align: center;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
   }
+  footer {
+    .footer-comercial {
+      border-top: 1px solid #EFEFEF;
+      padding: 80px 0 0 0;
+      margin-top: 80px;
+      text-align: center;
+    }
+  }
+}
+
+section {
+  width: 960px;
 }
