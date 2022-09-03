@@ -47,18 +47,20 @@
       <img class="divisor" src="./src/assets/divisor.png" alt="divisor de sessao">
 
       <div class="form-link">
-        <form>
+        <form name="formPhone">
           <label>What's your phone number?
-            <input type="text" placeholder="+55 (99) 99999-9999">
+            <input name="phone" type="text" placeholder="+55 (99) 99999-9999" required>
           </label>
           <p>Make sure you include the country code followed by the area code. E.g.1 for the US, 44 for the UK.</p>
           <label>
             What message do you want your customers to see when they contact you?
-            <input type="text" placeholder="e.g: Give me further information about...">
+            <input name="text" type="text" placeholder="e.g: Give me further information about..." required>
           </label>
-          <button>Get link
-            <span></span>
-          </button>
+          <button class="submit">Get link</button>
+          <div id="hide" class="hide">
+            <span id="copy"></span>
+            <button type="button">copy</button>
+          </div>
         </form>
         <div class="link-free">
           <img class="planes-2" src="./src/assets/planes2.png" alt="aviao de papel">
