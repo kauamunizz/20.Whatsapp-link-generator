@@ -428,12 +428,12 @@ body {
       margin-top: 60px;
       padding: 0 12px;
       .esquerdo{
-        width: 400px;
+        // width: 400px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        // padding-right: 50px;
+        padding: 0;
         position: relative;
         margin: 0 auto;
         .title {
