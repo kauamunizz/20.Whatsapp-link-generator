@@ -41,7 +41,10 @@ const index = (() => {
         });
 
         document.querySelector('#dropButton').addEventListener('click', () => {
+            const padHeader = document.querySelector('.header');
             const menu = document.querySelector('.items');
+
+            padHeader.classList.toggle('header-padding');
             menu.classList.toggle('hide-menu');
         })
     }
