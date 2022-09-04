@@ -28,9 +28,23 @@ const index = (() => {
             navigator.clipboard.writeText(link.innerText);
             console.log(link.innerText);
         });
-        
-    }
 
+        document.querySelector('footer nav').addEventListener('click', event => {
+            const click = event.target;
+
+            if (click.classList.contains('title-li')) {
+                const row = click.closest('ul')
+                row.classList.toggle('active');
+
+                event.preventDefault();
+            };
+        });
+
+        document.querySelector('#dropButton').addEventListener('click', () => {
+            const menu = document.querySelector('.items');
+            menu.classList.toggle('hide-menu');
+        })
+    }
 
     function init() {
         events();

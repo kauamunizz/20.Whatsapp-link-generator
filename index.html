@@ -13,7 +13,12 @@
 
     <header>
       <img src="./src/assets/LogoW.png" alt="Logo">
-      <ul>
+      <div id="menu">
+        <button type="button" id="dropButton" name="drop-button">
+          <img class="menu" src="./src/assets/menu.svg" alt="icone menu">
+        </button>
+      </div>
+      <ul class="items hide-menu">
         <li>
           <a href="#">Try it for free</a>
         </li>
@@ -99,9 +104,9 @@
     <footer>
       <nav>
         <ul>
-          <li>
-            <a href="#" class="title-li">More information:</a>
-          </li>
+        
+          <a href="#" class="title-li">More information: <span><i class="fa-solid fa-angle-down"></i></span></a>
+          
           <li>
             <a href="#">Terms, condition and privacy policy</a>
           </li>
@@ -119,9 +124,8 @@
           </li>
         </ul>
         <ul>
-          <li>
-            <a href="#" class="title-li">With Postcron you can:</a>
-          </li>
+          
+          <a href="#" class="title-li">With Postcron you can: <span><i class="fa-solid fa-angle-down"></i></span></a>
           <li>
             <a href="#">Schedule Facebook Posts</a>
           </li>
@@ -136,9 +140,7 @@
           </li>
         </ul>
         <ul>
-          <li>
-            <a href="#" class="title-li">Postcron Features</a>
-          </li>
+          <a href="#" class="title-li">Postcron Features <span><i class="fa-solid fa-angle-down"></i></span></a>
           <li>
             <a href="#">How to Schedule Many Posts at once or Make a Bulk Upload?</a>
           </li>
@@ -162,9 +164,7 @@
           </li>
         </ul>
         <ul>
-          <li>
-            <a href="#"  class="title-li">Access from everywhere</a>
-          </li>
+          <a href="#"  class="title-li">Access from everywhere <span><i class="fa-solid fa-angle-down"></i></span></a>
           <li>
             <a href="#">Avaible google</a>
           </li>
@@ -178,7 +178,7 @@
       </nav>
     </footer>
     
-
+    <script src="https://kit.fontawesome.com/5b49c3d7ca.js" crossorigin="anonymous"></script>
     <script type="module" src="/src/scripts/index.js"></script>
   </body>
 </html>
