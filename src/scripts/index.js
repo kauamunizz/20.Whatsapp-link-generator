@@ -7,9 +7,11 @@ const index = (() => {
         const { phone, text } = document.forms.formPhone;
         const phoneReplace = phone.value.replace(/\D/g, '');
         const valor = encodeURI(`https://api.whatsapp.com/send?phone=${phoneReplace}&text=${text.value}`);
-        const copy = document.querySelector('#copy');
+        // const copy = document.querySelector('#copy');
+        const input = document.querySelector('#valueCopy');
 
-        copy.innerText = valor;
+        // copy.innerText = valor;
+        input.value = valor
     }
 
 
@@ -22,18 +24,25 @@ const index = (() => {
             document.querySelector('#hide').classList.remove('hide');
         });
 
-        document.querySelector('#hide button').addEventListener('click', () => {
-            console.log('clicado');
+        document.querySelector('#hide button').addEventListener('click', (event) => {
+            const buttonCopy = event.currentTarget;
             const link = document.querySelector('#copy');
+
             navigator.clipboard.writeText(link.innerText);
-            console.log(link.innerText);
+            // buttonCopy.innerText = 'copiado';
+            buttonCopy.style.backgroundColor = 'green';
+
+            setTimeout(() => {
+                // buttonCopy.innerText = 'Copy Link';
+                buttonCopy.style.backgroundColor = 'rgb(204, 204, 204)';
+            }, 2000);
         });
 
         document.querySelector('footer nav').addEventListener('click', event => {
             const click = event.target;
 
             if (click.classList.contains('title-li')) {
-                const row = click.closest('ul')
+                const row = click.closest('ul');
                 row.classList.toggle('active');
 
                 event.preventDefault();

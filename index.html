@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whatsapp Link Generator</title>
+    <link rel="icon" href="//v.fastcdn.co/u/51e5171d/26356666-0-favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,600&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
       </div>
       <ul class="items hide-menu">
         <li>
-          <a href="#">Try it for free</a>
+          <a href="#generate">Try it for free</a>
         </li>
         <li>
           <a href="#">Log In</a>
@@ -53,22 +53,30 @@
       <img class="divisor" src="./src/assets/divisor.png" alt="divisor de sessao">
 
       <div class="form-link">
+
         <form name="formPhone">
           <label>What's your phone number?
-            <input name="phone" type="text" placeholder="+55 (99) 99999-9999" required>
+            <input name="phone" type="tel" maxlength="20" minlength="10" placeholder="+55 (99) 99999-9999" required>
           </label>
+          
           <p>Make sure you include the country code followed by the area code. E.g.1 for the US, 44 for the UK.</p>
+          
           <label>
             What message do you want your customers to see when they contact you?
             <input name="text" type="text" placeholder="e.g: Give me further information about..." required>
           </label>
+
           <button class="submit">Get link</button>
+
           <div id="hide" class="hide">
             <hr>
             <h6>Here is your link:</h6>
+
             <div class="input-copy">
               <span id="copy"></span>
-              <button type="button">Copy Link</button>
+              <input id="valueCopy" type="text" readonly>
+
+              <button id="buttonCopy" type="button"><span><i class="fa-sharp fa-solid fa-file-import"></i></span> Copy Link</button>
             </div>
           </div>
         </form>
