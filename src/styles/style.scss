@@ -172,6 +172,9 @@ body {
         border: 1px solid #fff;
         box-shadow: 0 2px 6px rgb(0 0 0 / 20%);
         border-radius: 10px;
+        button {
+          cursor: pointer;
+        }
         label {
           display: flex;
           flex-direction: column;
@@ -551,6 +554,7 @@ body {
         flex-direction: column;
         align-items: center;
         position: relative;
+        
         .whatsapp-link {
           position: absolute;
           width: 149px;
@@ -564,6 +568,7 @@ body {
           #hide {
             .input-copy {
               margin-top: 20px;
+
             }
           }
           .hide {
