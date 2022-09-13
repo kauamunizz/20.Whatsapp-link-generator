@@ -26,9 +26,9 @@ const index = (() => {
 
         document.querySelector('#hide button').addEventListener('click', (event) => {
             const buttonCopy = event.currentTarget;
-            const link = document.querySelector('#copy');
+            const link = document.querySelector('#valueCopy');
 
-            navigator.clipboard.writeText(link.innerText);
+            navigator.clipboard.writeText(link.value);
             // buttonCopy.innerText = 'copiado';
             buttonCopy.style.backgroundColor = 'green';
 
