@@ -7,10 +7,8 @@ const index = (() => {
         const { phone, text } = document.forms.formPhone;
         const phoneReplace = phone.value.replace(/\D/g, '');
         const valor = encodeURI(`https://api.whatsapp.com/send?phone=${phoneReplace}&text=${text.value}`);
-        // const copy = document.querySelector('#copy');
         const input = document.querySelector('#valueCopy');
 
-        // copy.innerText = valor;
         input.value = valor
     }
 
@@ -29,11 +27,9 @@ const index = (() => {
             const link = document.querySelector('#valueCopy');
 
             navigator.clipboard.writeText(link.value);
-            // buttonCopy.innerText = 'copiado';
             buttonCopy.style.backgroundColor = 'green';
 
             setTimeout(() => {
-                // buttonCopy.innerText = 'Copy Link';
                 buttonCopy.style.backgroundColor = 'rgb(204, 204, 204)';
             }, 2000);
         });
